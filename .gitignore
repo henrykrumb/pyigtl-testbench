@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+bin/
+
+# CMake build dir
+build/
+
+# Python cache
+__pycache__/
+python/__pycache__/
+*.pyc
+*.pyo
