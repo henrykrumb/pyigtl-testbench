@@ -21,6 +21,7 @@ def test_transform(igtclient):
 
     matrix = input_message.matrix
     assert np.all(matrix == np.eye(4)) == True
+    matrix[0][0] = 42;
 
     output_message = pyigtl.TransformMessage(
         matrix,
