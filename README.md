@@ -7,8 +7,13 @@ reference implementation (OpenIGTLink) to ensure it is compatible with other IGT
 
 ## Architecture
 
-
-
+Both OpenIGTLink and pyigtl allow users to easily create server or client connections for bidirectional data
+transfer.
+Which means that per message type, we have four routes to test:
+  * OpenIGTLink Server --> pyigtl Client
+  * OpenIGTLink Server --> pyigtl Client
+  * OpenIGTLink Client <-- pyigtl Server
+  * OpenIGTLink Client <-- pyigtl Server
 
 ## Usage
 
@@ -20,6 +25,8 @@ cd build
 cmake ..
 make
 ```
+
+Then, execute the run_testbench.sh shell script.
 
 
 ## Message types
